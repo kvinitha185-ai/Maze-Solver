@@ -1,0 +1,48 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.maze {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    width: 300px;
+    margin: 30px auto;
+}
+
+.maze div {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.maze .wall {
+    background: black;
+}
+
+.maze .path {
+    background: yellow;
+}
+
+.maze .start {
+    background: green;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.maze .end {
+    background: red;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
